@@ -294,17 +294,25 @@ calculate_wind_chill() {
 get_airport_coordinates() {
   local code=$1
   case $code in
-    KJFK) echo "40.6413,-73.7781" ;;
-    EGLL) echo "51.4700,-0.4543" ;;
-    RJTT) echo "35.5494,139.7798" ;;
-    YSSY) echo "-33.9399,151.1753" ;;
-    FACT) echo "-33.9648,18.6017" ;;
-    SBGR) echo "-23.4356,-46.4731" ;;
-    LTBA) echo "40.9769,28.8146" ;;
-    OMDB) echo "25.2532,55.3657" ;;
-    VIDP) echo "28.5562,77.1000" ;;
-    ZBAA) echo "40.0799,116.6031" ;;
-    *) echo "0,0" ;;
+    KJFK) echo "40.6413,-73.7781" ;;    # John F. Kennedy International Airport (New York, USA)
+    EGLL) echo "51.4700,-0.4543" ;;     # Heathrow Airport (London, UK)
+    RJTT) echo "35.5494,139.7798" ;;    # Tokyo Haneda Airport (Tokyo, Japan)
+    YSSY) echo "-33.9399,151.1753" ;;   # Sydney Airport (Sydney, Australia)
+    FACT) echo "-33.9648,18.6017" ;;    # Cape Town International Airport (Cape Town, South Africa)
+    SBGR) echo "-23.4356,-46.4731" ;;   # São Paulo–Guarulhos International Airport (São Paulo, Brazil)
+    LTBA) echo "40.9769,28.8146" ;;     # Istanbul Atatürk Airport (Istanbul, Turkey)
+    LTFM) echo "41.2753,28.7519" ;;     # Istanbul Airport (Istanbul, Turkey)
+    LTAC) echo "40.1281,32.9951" ;;     # Esenboğa Airport (Ankara, Turkey)
+    LTBJ) echo "38.2924,27.1564" ;;     # Adnan Menderes Airport (Izmir, Turkey)
+    LTAI) echo "36.8987,30.8005" ;;     # Antalya Airport (Antalya, Turkey)
+    OEJN) echo "21.6702,39.1565" ;;     # King Abdulaziz International Airport (Jeddah, Saudi Arabia)
+    OERK) echo "24.9576,46.6988" ;;     # King Khalid International Airport (Riyadh, Saudi Arabia)
+    OMRK) echo "25.6135,55.9388" ;;     # Ras Al Khaimah International Airport (Ras Al Khaimah, UAE)
+    OMDB) echo "25.2532,55.3657" ;;     # Dubai International Airport (Dubai, UAE)
+    VIDP) echo "28.5562,77.1000" ;;     # Indira Gandhi International Airport (Delhi, India)
+    ZBAA) echo "40.0799,116.6031" ;;    # Beijing Capital International Airport (Beijing, China)
+    EDDF) echo "50.0379,8.5622" ;;      # Frankfurt Airport (Frankfurt, Germany)
+    *) echo "0,0" ;;                    # Default / Unknown
   esac
 }
 
